@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+        h4{
+            color: white;
+        }
+    </style>
+</head>
+<body class="grey darken-3">
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                    <li class="tab col s6"><a class="active" href="addproducttab.html">Add Product</a></li>
+                    <li class="tab col s6"><a href="productlisttab.html">Product List</a></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="container">
+        <h4>Add New Product</h4>
+        <div class="wrapper">
+            <form action="">
+                <div class="input-field">
+                   <label for="">Product Name</label><input type="text" id="prodname">
+                </div>
+                <div class="input-field">
+                    <label for="">Product Description</label><input type="text" id="proddesc">
+                </div>
+                <div class="input-field">
+                        <label for="">Product Price</label><input type="text" id="prodprice">
+                    </div>
+                <div class="input-field">
+                    <label for="">Product Quantity</label><input type="number" id="prodqnty">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    var instance = M.Tabs.init(el, options);
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+    $('.tabs').tabs();
+    });
+</script>
+</body>
+</html>
